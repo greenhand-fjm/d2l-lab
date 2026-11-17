@@ -1,0 +1,13 @@
+# Python build / cache
+__pycache__/
+*.egg-info/
+build/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Large or generated files: never commit these
+data/
+runs/
+*.pt
+*.tmp

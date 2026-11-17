@@ -1,0 +1,12 @@
+# D2L 3.2-3.5 线性回归：在合成数据 y = Xw + b + 噪声 上学出 w=[2, -3.4], b=4.2
+name: linreg
+dataset: synthetic_linear
+task: regression
+model: linear
+model_args:
+  in_features: 2
+  out_features: 1
+batch_size: 10
+epochs: 3
+lr: 0.03
+optimizer: sgd

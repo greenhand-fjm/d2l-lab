@@ -1,0 +1,17 @@
+# D2L 5.2 多层感知机：Fashion-MNIST 服装图片 10 分类
+# 第一次运行会自动下载数据集（约 30MB）到 data/ 目录
+name: mlp_fashion
+dataset: fashion_mnist
+task: classification
+model: mlp
+model_args:
+  in_features: 784
+  hidden: [256]
+  num_classes: 10
+  dropout: 0.2
+batch_size: 256
+num_workers: 2
+epochs: 10
+lr: 0.1
+optimizer: sgd
+amp: true
